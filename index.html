@@ -363,6 +363,7 @@ footer{border-top-color:rgba(255,255,255,.12)}
 
 .card img,.c-hero .art img{display:block;width:100%;height:auto}
 .card.wide{width:min(100%,640px)}
+.card.tall{width:min(100%,340px)}
 .c-slides{padding:0 var(--pad) 90px}
 .c-sl{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
 .c-sl figure{position:relative;border-radius:14px;overflow:hidden;cursor:zoom-in;box-shadow:0 30px 60px -30px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.08)}
@@ -391,6 +392,12 @@ footer{border-top-color:rgba(255,255,255,.12)}
 .book-ctrl .bc{width:auto;padding:0 18px;background:transparent;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4);font-family:var(--display);font-size:15px;letter-spacing:.06em}
 #bookCount{min-width:0;max-width:46vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:900px){.carnet .c-head{top:96px}#bookCount{display:none}.book-ui{bottom:40px}}
+
+.c-video{padding:0 var(--pad) 90px}
+.c-video .vwrap{position:relative;margin-top:22px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 40px 90px -30px rgba(0,0,0,.95),0 0 0 1px rgba(255,255,255,.1),0 0 80px rgba(255,90,31,.18)}
+.c-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.c-video .vlink{display:inline-block;margin-top:14px;opacity:.7}
+.c-video .vlink:hover{opacity:1;color:#ff3434}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -659,7 +666,24 @@ Object.assign(PROJECTS[0],{title:'Crave & Co',cat:'Identité de marque',year:'20
  lead:'« Le plaisir coupable, sans compromis. » Un fast-food 100 % vegan qui ne rend pas le vegan acceptable : il le rend irrésistible.',
  text:'Le constat : le vegan est perçu comme trop sain, trop moral, peu appétissant, et le discours culpabilisant ne change pas les habitudes. CRAVE reprend les codes de la junk food (texture, goût, visuel) sans esthétique « healthy » ni leçon de morale. Le mot « vegan » n’apparaît même pas dans le logo : ça doit se voir au goût, pas au marketing.',
  steps:[['Analyse','SWOT, PESTEL et analyse concurrentielle face à Green Farmers, Furahaa et Wani Paris.'],['Cibles','Deux personas : Léa, 29 ans, flexitarienne, et Hugo, 20 ans, vegan engagé.'],['Identité','Logo burger bold et un peu cartoon, typo comic / graffiti, jaune qui donne faim et touche de vert.'],['Diffusion','Stratégie Instagram & TikTok, posts, vidéo, calendrier éditorial et landing page.']],
- palette:['#f0a82d','#38b44a','#000000','#f2f2f2'],cover:'s01.jpg',slides:[{"src": "s01.jpg", "cap": "Couverture"}, {"src": "s02.jpg", "cap": "La viande détruit notre planète"}, {"src": "s03.jpg", "cap": "Le problème du vegan aujourd'hui"}, {"src": "s04.jpg", "cap": "Une nouvelle approche"}, {"src": "s05.jpg", "cap": "Analyse marketing — SWOT & PESTEL"}, {"src": "s06.jpg", "cap": "Analyse concurrentielle"}, {"src": "s07.jpg", "cap": "Persona 1 — Léa"}, {"src": "s08.jpg", "cap": "Persona 2 — Hugo"}, {"src": "s09.jpg", "cap": "Stratégie digitale"}, {"src": "s10.jpg", "cap": "Vidéo TikTok"}, {"src": "s11.jpg", "cap": "Posts Instagram"}, {"src": "s12.jpg", "cap": "Calendrier éditorial"}, {"src": "s13.jpg", "cap": "Identité visuelle — logo, typo, couleurs"}, {"src": "s14.jpg", "cap": "Landing page"}, {"src": "s15.jpg", "cap": "Éco-responsabilité"}, {"src": "s16.jpg", "cap": "Rejoignez la révolution du goût responsable"}]});
+ palette:['#f0a82d','#38b44a','#000000','#f2f2f2'],cover:'s01.jpg',wide:true,slides:[{"src": "s01.jpg", "cap": "Couverture"}, {"src": "s02.jpg", "cap": "La viande détruit notre planète"}, {"src": "s03.jpg", "cap": "Le problème du vegan aujourd'hui"}, {"src": "s04.jpg", "cap": "Une nouvelle approche"}, {"src": "s05.jpg", "cap": "Analyse marketing — SWOT & PESTEL"}, {"src": "s06.jpg", "cap": "Analyse concurrentielle"}, {"src": "s07.jpg", "cap": "Persona 1 — Léa"}, {"src": "s08.jpg", "cap": "Persona 2 — Hugo"}, {"src": "s09.jpg", "cap": "Stratégie digitale"}, {"src": "s10.jpg", "cap": "Vidéo TikTok"}, {"src": "s11.jpg", "cap": "Posts Instagram"}, {"src": "s12.jpg", "cap": "Calendrier éditorial"}, {"src": "s13.jpg", "cap": "Identité visuelle — logo, typo, couleurs"}, {"src": "s14.jpg", "cap": "Landing page"}, {"src": "s15.jpg", "cap": "Éco-responsabilité"}, {"src": "s16.jpg", "cap": "Rejoignez la révolution du goût responsable"}]});
+Object.assign(PROJECTS[1],{title:"Touche pas à mon p'tit bois",cat:'Identité visuelle',year:'2026',role:'Identité, charte, réseaux sociaux, merch',client:'Association — vrai client',
+ lead:'Un vrai client, un vrai enjeu local : l’identité d’une association qui défend les espaces naturels de Bois-le-Roi.',
+ text:'Dans le cadre de la My Digital Week, un challenge inter-écoles organisé par My Digital School, nous avons accompagné en groupe de quatre une association engagée pour l’environnement : Touche Pas à Mon P’tit Bois, qui lutte contre un projet d’urbanisation menaçant les espaces naturels de Bois-le-Roi (77). Designer du groupe, j’ai reconstruit entièrement son identité visuelle.',
+ steps:[['Identité','Logo principal et logo secondaire.'],['Charte','Couleurs, typographies et règles d’usage du logo.'],['Réseaux sociaux','Posts de campagne pour porter le message de l’association.'],['Déclinaisons','Merchandising (tote bag, gourde) et maquette du site internet.']],
+ palette:['#774018','#41762d','#8bcc62','#fbca07'],cover:'bois-cover.jpg',tall:true,slides:[{"src": "bois-s02.jpg", "cap": "Charte, merchandising, site web et posts"}]});
+Object.assign(PROJECTS[2],{title:'Café Baguette',cat:'Identité & packaging',year:'2026',role:'Identité visuelle, packaging, mockups',client:'Projet de cours — My Digital School',
+ lead:'L’identité complète d’un coffee shop urbain et moderne, construite à partir d’une direction artistique imposée.',
+ text:'Projet réalisé en cours à My Digital School. À partir d’une DA imposée (palette jaune, typographie définie), j’ai construit l’identité visuelle complète de Café Baguette : gobelets, sacs, t-shirt, et une gamme de canettes pour la grande distribution, ajoutée de ma propre initiative pour pousser l’univers de marque plus loin.',
+ steps:[['Brief','Direction artistique imposée : palette jaune et typographie définie.'],['Identité','Logo et univers graphique du coffee shop.'],['Packaging','Gobelets, sacs et t-shirt mis en situation en mockups.'],['Initiative','Gamme de canettes : expresso, café au lait, café noisette.']],
+ palette:['#f2b31b','#ffffff','#5a3a1e','#1a1a1a'],cover:'cafe-cover.jpg',wide:true,slides:[{"src": "cafe-s02.jpg", "cap": "Gobelet — mockup"}, {"src": "cafe-s03.jpg", "cap": "Gamme de canettes grandes surfaces"}, {"src": "cafe-s04.jpg", "cap": "T-shirt, sac et gobelet"}]});
+Object.assign(PROJECTS[3],{title:'Cinélys',cat:'Affiche',year:'2027',role:'Affiche événementielle, du croquis au rendu',client:'Studio M — Cinélys 10 ans',
+ lead:'L’affiche des 10 ans du festival Cinélys : originale, attractive et mémorable.',
+ text:'Pour les 10 ans de Cinélys (20 mars 2027, Pathé Dammarie-les-Lys), l’objectif était de créer une affiche qui raconte l’évolution du festival et met en avant Studio M, pour un public de cinéphiles et d’étudiants. Une salle de cinéma rétro en lunettes 3D, une pellicule en cadre, une typographie groovy et un ticket rouge pour les infos pratiques.',
+ steps:[['Inspirations','Affiches de cinéma rétro et événementielles.'],['Moodboard','Typo Bobogie Groovy, palette rouge, crème et violet nuit.'],['Croquis','Version 1 puis version 2, dessinées à la main.'],['Mise en page','Grille de composition, puis rendu final.']],
+ palette:['#2a1240','#c4291c','#e8d3b0','#14101a'],cover:'cinelys-cover.jpg',tall:true,slides:[{"src": "cinelys-s01.jpg", "cap": "Inspirations"}, {"src": "cinelys-s02.jpg", "cap": "Moodboard — typo Bobogie Groovy & palette"}, {"src": "cinelys-s03.jpg", "cap": "Choix et évolutions — croquis V1 → V2"}, {"src": "cinelys-s04.jpg", "cap": "Mise en page — grille"}, {"src": "cinelys-s05.jpg", "cap": "Rendu final"}]});
+PROJECTS[0].video='F7fh_bRA_2k';
+PROJECTS.splice(4,1);
 PROJECTS.forEach((p,i)=>{p.pbg=['#140705','#080c04','#120404','#0a0706','#110c03'][i];p.pfg='#f2f2f2';p.glow=['#ff5a1f','#8fae3a','#ff2a2a','#ff7a3d','#e9a93a'][i];});
 
 const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
@@ -681,7 +705,7 @@ $('#projList').innerHTML=PROJECTS.map((p,i)=>`
     <div class="tags"><span>${p.year}</span><span>${p.role}</span><span>${p.client}</span></div>
     <button class="see" data-open="${i}" data-af="Voir">Voir le projet <span>→</span></button>
   </div>
-  <div class="cardwrap z2"><div class="card${p.cover?' wide':''}" data-open="${i}" data-af="Voir">${p.cover?`<img src="${p.cover}" alt="${p.title}">`:ART[p.key]}<span class="holo"></span><span class="glare"></span></div></div>
+  <div class="cardwrap z2"><div class="card${p.wide?' wide':''}${p.tall?' tall':''}" data-open="${i}" data-af="Voir">${p.cover?`<img src="${p.cover}" alt="${p.title}">`:ART[p.key]}<span class="holo"></span><span class="glare"></span></div></div>
 </article>`).join('');
 
 /* ---------- build: photo placeholders (procedural) ---------- */
@@ -828,10 +852,10 @@ function renderCase(i){const p=PROJECTS[i],n=(i+1)%PROJECTS.length;
   caseEl.style.setProperty('--cbg',p.pbg);caseEl.style.setProperty('--cfg',p.pfg);
   $('#caseC').innerHTML=`<section class="c-hero"><div><span class="mono">0${i+1} / 0${PROJECTS.length} — ${p.cat}</span><h2 class="big" style="margin-top:14px">${p.title}</h2>
    <div class="meta mono"><div>Client<b>${p.client}</b></div><div>Année<b>${p.year}</b></div><div>Rôle<b>${p.role}</b></div></div></div><div class="art">${p.cover?`<img src="${p.cover}" alt="">`:ART[p.key]}</div></section>
-   <section class="c-body"><span class="mono">( Le projet )</span><div><p class="lead">${p.lead}</p><p class="t">${p.text}</p></div></section>
+   <section class="c-body"><span class="mono">( Le projet )</span><div><p class="lead">${p.lead}</p><p class="t">${p.text}</p></div></section>${p.video?`<section class="c-video"><span class="mono">( Vidéo promotionnelle )</span><div class="vwrap"><iframe src="https://www.youtube-nocookie.com/embed/${p.video}?rel=0&modestbranding=1&playsinline=1" title="Vidéo promotionnelle ${p.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div><a class="vlink mono" href="https://youtu.be/${p.video}" target="_blank" rel="noopener">Voir sur YouTube ↗</a></section>`:''}
    <div class="c-steps">${p.steps.map((s,k)=>`<div><span class="mono">Étape 0${k+1}</span><b>${s[0]}</b><p>${s[1]}</p></div>`).join('')}</div>
-   ${p.slides?`<section class="c-slides"><span class="mono">( Le dossier — ${p.slides.length} planches )</span><div class="c-sl">${p.slides.map((x,k)=>k===0?'':`<figure data-sl="${k}" data-af="Zoom"><img src="${x.src}" loading="lazy" decoding="async" alt="${x.cap}"><figcaption class="mono"><span>${String(k+1).padStart(2,'0')}</span><span>${x.cap}</span></figcaption></figure>`).join('')}</div></section>`:''}
-   <div class="c-pal">${p.palette.map(c=>`<div class="mono" style="background:${c};color:${['#efe4d2','#d99a2b','#f0a82d','#38b44a','#f2f2f2'].includes(c)?'#160c06':'#f1e6d4'}">${c}</div>`).join('')}</div>
+   ${p.slides?`<section class="c-slides"><span class="mono">( Le dossier — ${p.slides.length} planches )</span><div class="c-sl">${p.slides.map((x,k)=>(k===0&&x.src===p.cover)?'':`<figure data-sl="${k}" data-af="Zoom"><img src="${x.src}" loading="lazy" decoding="async" alt="${x.cap}"><figcaption class="mono"><span>${String(k+1).padStart(2,'0')}</span><span>${x.cap}</span></figcaption></figure>`).join('')}</div></section>`:''}
+   <div class="c-pal">${p.palette.map(c=>`<div class="mono" style="background:${c};color:${['#efe4d2','#d99a2b','#f0a82d','#38b44a','#f2f2f2','#8bcc62','#fbca07','#f2b31b','#ffffff'].includes(c)?'#160c06':'#f1e6d4'}">${c}</div>`).join('')}</div>
    <button class="c-next" data-next="${n}" data-af="Suivant"><span class="mono">Projet suivant →</span><b>${PROJECTS[n].title}</b></button>`;
   caseEl.scrollTop=0;$('.c-next').addEventListener('click',()=>renderCase(n));$$('[data-sl]',caseEl).forEach(f=>f.addEventListener('click',()=>showLb(+f.dataset.sl,p.slides)));
   if(hasGsap&&!reduce)gsap.from('.c-hero > *',{y:60,opacity:0,stagger:.1,duration:1,ease:'expo.out'});}
